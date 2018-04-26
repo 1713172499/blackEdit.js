@@ -29,8 +29,8 @@
 <code>myEdit.getText():获取编辑器里的纯文本数据。</code>
   
 <h4>可用的实例参数</h4>
-<code>@param string textarea的ID</code>
-<code>@param object data参数</code>
+<code>@param string textarea的ID</code><br>
+<code>@param object data参数</code><br>
 
 
 <pre>
