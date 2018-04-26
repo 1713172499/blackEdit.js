@@ -8,10 +8,10 @@
 @date 2018-4-24<br>
  
 <h4>引入css与js</h4>
-<code>&lt;link rel="stylesheet" type="text/css" href="css/blackEdit.css"/&gt;</code>
-<code>&lt;link rel="stylesheet" type="text/css" href="css/iconfont.css"/&gt;</code>
-<code>&lt;script src="js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"&gt;&lt;/script&gt;</code>
-<code>&lt;script src="js/blackEdit.js" type="text/javascript" charset="utf-8"&gt;&lt;/script&gt;</code>
+<code>&lt;link rel="stylesheet" type="text/css" href="css/blackEdit.css"/&gt;</code><br>
+<code>&lt;link rel="stylesheet" type="text/css" href="css/iconfont.css"/&gt;</code><br>
+<code>&lt;script src="js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"&gt;&lt;/script&gt;</code><br>
+<code>&lt;script src="js/blackEdit.js" type="text/javascript" charset="utf-8"&gt;&lt;/script&gt;</code><br>
 
 <h4>HTML</h4>
 <code>&lt;textarea id="myEdit"&gt;&lt;/textarea&gt;</code>
