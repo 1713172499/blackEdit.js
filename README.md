@@ -25,8 +25,8 @@
 });
 <code>&lt;/script&gt;</code></pre><br>
 <p>这样就成功初始化了一个编辑器，实例化返回的变量中有一些索引信息和可用方法。</p>
-<code>myEdit.getContent():获取编辑器里的数据。</code>
-<code>myEdit.getText():获取编辑器里的纯文本数据。</code>
+<code>myEdit.getContent():获取编辑器里的数据。</code><br>
+<code>myEdit.getText():获取编辑器里的纯文本数据。</code><br>
   
 <h4>可用的实例参数</h4>
 <code>@param string textarea的ID</code><br>
