@@ -210,7 +210,7 @@ blackEdit = function(textareaDom,data={}){
 	/* 编辑区域外层框架 */
 	this.blackEditBody = $('<div class="blackEdit-body"></div>');
 	this.blackEditBody[0].style.height = this.editHeight;
-	this.blackEditBody[0].style.width = this.editWidth;
+	this.blackEditBody[0].style.width = '100%';
 	if(this.editResize){
 		this.blackEditBody[0].style.overflow = 'auto';
 		this.blackEditBody[0].style.resize = 'vertical';
