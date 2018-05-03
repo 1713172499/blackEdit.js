@@ -146,7 +146,7 @@ blackEdit = function(textareaDom,data={}){
 		'unlink' : $('<span><a class="iconfont icon-remove_link" data-tool="unlink" title="取消超级链接"></a></span>'),
 		'undo' : $('<span><a class="iconfont icon-chexiao" data-tool="undo" title="后退一步"></a></span>'),
 		'redo' : $('<span><a class="iconfont icon-zhongzuo" data-tool="redo" title="前进一步"></a></span>'),
-		'fullscreen' : $('<span><a class="icon-fullscreen" data-tool="fullscreen" title="全屏显示"></a></span>'),
+		'fullscreen' : $('<span><a class="iconfont icon-bianjiqifangdachuangkou" data-tool="fullscreen" title="全屏显示"></a></span>'),
 		'picture' : $('<span><a class="iconfont icon-bianjiqicharutupian" data-tool="picture" title="插入图片"></a><div class="upload-img-box">网络图片:<input type="text" placeholder="请输入图片链接"/><a href="javascript:;" class="website-upload">确认</a>本地上传：<div class="location-upload iconfont icon-shangchuan"><input type="file" class="upload-img" accept="image/*"/></div></div></span>'),
 		'face' : this.face,
 		'paragraph' : $('<span><a class="iconfont icon-charuxing" data-tool="paragraph" title="插入新段落"></a></span>'),
