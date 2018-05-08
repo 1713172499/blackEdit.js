@@ -43,7 +43,7 @@ data 示例参数如下<br>
     audioUpload : url, // 音频上传处理程序地址
     videoUpload : url, // 视频上传处理程序地址
     resize : boolean, // 是否允许编辑器可调整高度：IE下不支持
-    prompt : boolean | string, // 编辑器提示:false为不显示提示
+    prompt : boolean | string | HTML, // 编辑器初始内容:false为不显示提示
     tools : [
     'bold', // 加粗
     'italic', // 斜体
