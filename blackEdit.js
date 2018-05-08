@@ -23,7 +23,7 @@
  * 		audioUpload : url, // 音频上传处理程序地址
  * 		videoUpload : url, // 视频上传处理程序地址
  * 		resize : boolean, // 是否允许编辑器可调整高度：IE下不支持
- * 		prompt : boolean | string, // 编辑器提示:false为不显示提示
+ * 		prompt : boolean | string | HTML, // 编辑器初始内容:false为不显示提示
  * 		tools : [
 			'bold', // 加粗
 			'italic', // 斜体
@@ -73,11 +73,11 @@ blackEdit = function(textareaDom,data={}){
 	this.audioUpload = data.audioUpload ? data.audioUpload : undefined; // 音频上传地址
 	this.editResize = data.resize ? data.resize : false; // 允许编辑器高度缩放：IE下不支持
 	if(typeof data.prompt == 'string'){
-		this.promptText = data.prompt; // 提示	
+		this.promptText = data.prompt; // 初始内容 	
 	}else if(typeof data.prompt == 'boolean' && data.prompt == false){
-		this.promptText = ''; // 提示	
+		this.promptText = ''; // 初始内容	
 	}else{
-		this.promptText = data.prompt ? data.prompt : '欢迎使用 blackEdit.js'; // 提示
+		this.promptText = data.prompt ? data.prompt : '欢迎使用 blackEdit.js'; // 初始内容
 	}
 	// 表情标题
 	var face_t = ["[微笑]", "[嘻嘻]", "[哈哈]", "[可爱]", "[可怜]", "[挖鼻]", "[吃惊]", "[害羞]", "[挤眼]", "[闭嘴]", "[鄙视]", "[爱你]", "[泪]", "[偷笑]", "[亲亲]", "[生病]", "[太开心]", "[白眼]", "[右哼哼]", "[左哼哼]", "[嘘]", "[衰]", "[委屈]", "[吐]", "[哈欠]", "[抱抱]", "[怒]", "[疑问]", "[馋嘴]", "[拜拜]", "[思考]", "[汗]", "[困]", "[睡]", "[钱]", "[失望]", "[酷]", "[色]", "[哼]", "[鼓掌]", "[晕]", "[悲伤]", "[抓狂]", "[黑线]", "[阴险]", "[怒骂]", "[互粉]", "[心]", "[伤心]", "[猪头]", "[熊猫]", "[兔子]", "[ok]", "[耶]", "[good]", "[NO]", "[赞]", "[来]", "[弱]", "[草泥马]", "[神马]", "[囧]", "[浮云]", "[给力]", "[围观]", "[威武]", "[奥特曼]", "[礼物]", "[钟]", "[话筒]", "[蜡烛]", "[蛋糕]"];
@@ -225,7 +225,8 @@ blackEdit = function(textareaDom,data={}){
 		_this.f = this.contentDocument;
 		/* 开启iframe设计模式 */
 		this.contentDocument.designMode = 'on';
-		_this.f.execCommand('insertHTML',false,'<p>'+_this.promptText+'</p>');
+		// 插入初始编辑器初始内容
+		_this.f.body.innerHTML = '<p>'+_this.promptText+'</p>';
 	});
 	/* 将iframe和textare追加进编辑区域外层 */
 	this.blackEditBody.append(this.myframe);
